@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# A few different queries to run in JIRA to get data
+
+# Get the Display teams creation date to the QA Blocked 
+# project = Display AND status =  "QA Blocked" ORDER BY created DESC
+
 # get the number of JIRA items to look at from XML export in JIRA
 # the file that xmllint runs on should be named "jira.xml"
 COUNT=`xmllint --xpath 'count(//rss/channel/item)' jira.xml`
