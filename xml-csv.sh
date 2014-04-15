@@ -25,7 +25,7 @@ while [  $COUNT -gt 0 ]; do
      # convert the dates from the above eval command
      # date -jf "format the date is currently in" "String Date" "format to go to"
      cCmd="date -jf \"%a, %e %h %Y %H:%M:%S %z\" \"$cD\" +\"%x\""
-     uCmd="date -jf \"%a, %e %h %Y %H:%M:%S %z\" \"$cD\" +\"%x\""
+     uCmd="date -jf \"%a, %e %h %Y %H:%M:%S %z\" \"$uD\" +\"%x\""
 
      c=`eval $cCmd`
      u=`eval $uCmd`
